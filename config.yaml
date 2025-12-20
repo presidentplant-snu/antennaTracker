@@ -1,0 +1,33 @@
+# Antenna Tracker Configuration
+
+# MAVLink connection address
+# Examples:
+mavlink_addr: "udpin://127.0.0.1:13786"
+
+# Serial port for servo controller
+serial_port: "/dev/ttyUSB0"
+
+# Ground station location
+ground_station:
+  latitude: 47.397973 # degrees
+  longitude: 8.546313 # degrees
+  altitude: 0.0         # meters MSL
+  heading: 0.0           # degrees (0 = North, 90 = East, 180 = South, 270 = West)
+
+# Pitch servo configuration (tilt/elevation)
+pitch_servo:
+  trim_pwm: 1550         # PWM value at neutral position (microseconds)
+  min_pwm: 1550          # PWM value at minimum position (microseconds)
+  max_pwm: 2300          # PWM value at maximum position (microseconds)
+  min_angle: 0.0       # Angle at minimum PWM (degrees)
+  max_angle: 90.0        # Angle at maximum PWM (degrees)
+  max_rate: 5
+
+# Yaw servo configuration (pan/azimuth)
+yaw_servo:
+  trim_pwm: 1430         # PWM value at neutral position (microseconds)
+  min_pwm: 1000          # PWM value at minimum position (microseconds)
+  max_pwm: 1800          # PWM value at maximum position (microseconds)
+  min_angle: -90.0      # Angle at minimum PWM (degrees)
+  max_angle: 90.0       # Angle at maximum PWM (degrees)
+  max_rate: 5
