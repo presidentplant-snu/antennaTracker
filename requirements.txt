@@ -1,6 +1,3 @@
-# numpy
+pymavlink
 pyproj
-# pyserial
-mavsdk
-PyYAML 
-mavproxy
+PyYAML
